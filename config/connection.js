@@ -3,7 +3,7 @@ const mysql = require('mysql2');
 let connection;
 
 // production connection - variable that only exist in production 
-if( process.env.JAWSDB.URL){
+if( process.env.JAWSDB_URL){
 connection = mysql.createConnection(process.env.JAWSDB_URL).promise();
 } 
 // local host conenction
